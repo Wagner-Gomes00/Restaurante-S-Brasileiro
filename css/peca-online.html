@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Sabor Brasileiro</title>
+    <link rel="stylesheet" href="peca-online.css">
+</head>
+
+<body>
+    <header>
+        <h1>Restaurante Sabor Brasileiro</h1>
+    </header>
+
+    <div class="container">
+                <nav class="side-menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="menu.html">Menu Pratos</a></li>
+                <li><a href="peca-online.html">Peça Online</a></li>
+            </ul>
+        </nav>
+
+            <section class="content">
+            <div class="form-container">
+                <h2>Peça Online</h2>
+                <p>Escolha seus pratos favoritos e faça seu pedido online agora mesmo!</p>
+
+                <form action="submit.php" method="post">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="endereco">Endereço:</label><br>
+                    <input type="text" id="endereco" name="endereco" required><br><br>
+
+                    <label for="telefone">Telefone:</label><br>
+                    <input type="tel" id="telefone" name="telefone" required><br><br>
+
+                    <label for="pratos">Seleção de Pratos:</label><br>
+                    <select id="pratos" name="pratos">
+                        <option value="feijoada">Feijoada</option>
+                        <option value="moqueca">Moqueca</option>
+                        <option value="pao-de-queijo">Pão de Queijo</option>
+                        <option value="brigadeiro">Brigadeiro</option>
+                    </select><br><br>
+
+                    <label>Método de Pagamento:</label><br>
+                    <input type="radio" id="cartao" name="pagamento" value="cartao" required>
+                    <label for="cartao">Cartão de Crédito</label><br>
+                    <input type="radio" id="dinheiro" name="pagamento" value="dinheiro" required>
+                    <label for="dinheiro">Dinheiro na Entrega</label><br><br>
+
+                    <label for="instrucoes">Instruções Especiais:</label><br>
+                    <textarea id="instrucoes" name="instrucoes" rows="4" cols="50"></textarea><br><br>
+
+                    <button type="submit">Enviar Pedido</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Restaurante Sabor Brasileiro</p>
+    </footer>
+</body>
+
+</html>
